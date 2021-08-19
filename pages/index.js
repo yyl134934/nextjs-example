@@ -1,23 +1,21 @@
 import Head from 'next/head'
 import Link from "next/link";
-import { getSortedPostsData } from '../lib/posts'
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
   return {
     props: {
-      allPostsData
     }
   }
 }
 
-export default function Home({ allPostsData }) {
+export default function Home({  }) {
   return (
     <div className="container">
       <Head>
         <title>你是屁屁坨</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
 
       {/* <ul >
           {allPostsData.map(({ id, date, title }) => (

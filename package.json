@@ -14,5 +14,8 @@
     "remark": "^14.0.1",
     "remark-html": "^14.0.0",
     "gray-matter": "^4.0.3"
+  },
+  "devDependencies": {
+    "mongodb": "^4.1.0"
   }
 }
